@@ -93,5 +93,12 @@ namespace CST324_TermProject_RideShare
 
             }
         }
+
+        private void rider_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form rf = new form_Rider();
+            rf.ShowDialog();
+        }
     }
     }

@@ -52,10 +52,9 @@
             // 
             this.lb_title.AutoSize = true;
             this.lb_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.lb_title.Location = new System.Drawing.Point(157, 16);
-            this.lb_title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_title.Location = new System.Drawing.Point(118, 13);
             this.lb_title.Name = "lb_title";
-            this.lb_title.Size = new System.Drawing.Size(691, 36);
+            this.lb_title.Size = new System.Drawing.Size(562, 29);
             this.lb_title.TabIndex = 0;
             this.lb_title.Text = "Welcome, Rider! Please Create your Ride Request.";
             this.lb_title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -63,13 +62,12 @@
             // lb_City
             // 
             this.lb_City.AutoSize = true;
-            this.lb_City.Location = new System.Drawing.Point(357, 145);
-            this.lb_City.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_City.Location = new System.Drawing.Point(268, 118);
             this.lb_City.Name = "lb_City";
-            this.lb_City.Size = new System.Drawing.Size(31, 17);
+            this.lb_City.Size = new System.Drawing.Size(24, 13);
             this.lb_City.TabIndex = 1;
             this.lb_City.Text = "City";
-            this.lb_City.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // cb_State
             // 
@@ -77,19 +75,17 @@
             this.cb_State.Items.AddRange(new object[] {
             "Klamath Falls",
             "Wilsonville"});
-            this.cb_State.Location = new System.Drawing.Point(469, 142);
-            this.cb_State.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_State.Location = new System.Drawing.Point(352, 115);
             this.cb_State.Name = "cb_State";
-            this.cb_State.Size = new System.Drawing.Size(160, 24);
+            this.cb_State.Size = new System.Drawing.Size(121, 21);
             this.cb_State.TabIndex = 2;
             // 
             // lb_streetaddress
             // 
             this.lb_streetaddress.AutoSize = true;
-            this.lb_streetaddress.Location = new System.Drawing.Point(357, 185);
-            this.lb_streetaddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_streetaddress.Location = new System.Drawing.Point(268, 150);
             this.lb_streetaddress.Name = "lb_streetaddress";
-            this.lb_streetaddress.Size = new System.Drawing.Size(102, 17);
+            this.lb_streetaddress.Size = new System.Drawing.Size(76, 13);
             this.lb_streetaddress.TabIndex = 3;
             this.lb_streetaddress.Text = "Street Address";
             // 
@@ -101,10 +97,9 @@
             // 
             // txt_StreetAddress
             // 
-            this.txt_StreetAddress.Location = new System.Drawing.Point(467, 181);
-            this.txt_StreetAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_StreetAddress.Location = new System.Drawing.Point(350, 147);
             this.txt_StreetAddress.Name = "txt_StreetAddress";
-            this.txt_StreetAddress.Size = new System.Drawing.Size(275, 22);
+            this.txt_StreetAddress.Size = new System.Drawing.Size(207, 20);
             this.txt_StreetAddress.TabIndex = 5;
             this.txt_StreetAddress.Validating += new System.ComponentModel.CancelEventHandler(this.txt_StreetAddress_Validating);
             // 
@@ -112,10 +107,9 @@
             // 
             this.lb_UserPrompt_Location.AutoSize = true;
             this.lb_UserPrompt_Location.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lb_UserPrompt_Location.Location = new System.Drawing.Point(357, 97);
-            this.lb_UserPrompt_Location.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_UserPrompt_Location.Location = new System.Drawing.Point(268, 79);
             this.lb_UserPrompt_Location.Name = "lb_UserPrompt_Location";
-            this.lb_UserPrompt_Location.Size = new System.Drawing.Size(297, 29);
+            this.lb_UserPrompt_Location.Size = new System.Drawing.Size(232, 24);
             this.lb_UserPrompt_Location.TabIndex = 6;
             this.lb_UserPrompt_Location.Text = "Please enter your location.";
             // 
@@ -123,57 +117,51 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label1.Location = new System.Drawing.Point(361, 226);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(271, 184);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(589, 29);
+            this.label1.Size = new System.Drawing.Size(458, 24);
             this.label1.TabIndex = 7;
             this.label1.Text = "Please enter your Desired Arrival time and Destination";
             // 
             // lb_destination
             // 
             this.lb_destination.AutoSize = true;
-            this.lb_destination.Location = new System.Drawing.Point(361, 279);
-            this.lb_destination.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_destination.Location = new System.Drawing.Point(271, 227);
             this.lb_destination.Name = "lb_destination";
-            this.lb_destination.Size = new System.Drawing.Size(187, 17);
+            this.lb_destination.Size = new System.Drawing.Size(138, 13);
             this.lb_destination.TabIndex = 8;
             this.lb_destination.Text = "Destination (Street Address)";
             // 
             // txt_destination
             // 
-            this.txt_destination.Location = new System.Drawing.Point(573, 276);
-            this.txt_destination.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_destination.Location = new System.Drawing.Point(430, 224);
             this.txt_destination.Name = "txt_destination";
-            this.txt_destination.Size = new System.Drawing.Size(275, 22);
+            this.txt_destination.Size = new System.Drawing.Size(207, 20);
             this.txt_destination.TabIndex = 9;
             this.txt_destination.Validating += new System.ComponentModel.CancelEventHandler(this.txt_destination_Validating);
             // 
             // txt_DesiredTime
             // 
-            this.txt_DesiredTime.Location = new System.Drawing.Point(573, 308);
-            this.txt_DesiredTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_DesiredTime.Location = new System.Drawing.Point(430, 250);
             this.txt_DesiredTime.Name = "txt_DesiredTime";
-            this.txt_DesiredTime.Size = new System.Drawing.Size(275, 22);
+            this.txt_DesiredTime.Size = new System.Drawing.Size(207, 20);
             this.txt_DesiredTime.TabIndex = 11;
             this.txt_DesiredTime.Validating += new System.ComponentModel.CancelEventHandler(this.txt_DesiredTime_Validating);
             // 
             // lb_DesiredTime
             // 
             this.lb_DesiredTime.AutoSize = true;
-            this.lb_DesiredTime.Location = new System.Drawing.Point(361, 311);
-            this.lb_DesiredTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_DesiredTime.Location = new System.Drawing.Point(271, 253);
             this.lb_DesiredTime.Name = "lb_DesiredTime";
-            this.lb_DesiredTime.Size = new System.Drawing.Size(152, 17);
+            this.lb_DesiredTime.Size = new System.Drawing.Size(113, 13);
             this.lb_DesiredTime.TabIndex = 10;
             this.lb_DesiredTime.Text = "Desired Time of Arrival";
             // 
             // btn_SubmitRideRequest
             // 
-            this.btn_SubmitRideRequest.Location = new System.Drawing.Point(363, 409);
-            this.btn_SubmitRideRequest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_SubmitRideRequest.Location = new System.Drawing.Point(272, 332);
             this.btn_SubmitRideRequest.Name = "btn_SubmitRideRequest";
-            this.btn_SubmitRideRequest.Size = new System.Drawing.Size(380, 46);
+            this.btn_SubmitRideRequest.Size = new System.Drawing.Size(285, 37);
             this.btn_SubmitRideRequest.TabIndex = 12;
             this.btn_SubmitRideRequest.Text = "Submit Ride Request";
             this.btn_SubmitRideRequest.UseVisualStyleBackColor = true;
@@ -185,30 +173,26 @@
             // 
             // txt_CreditCard
             // 
-            this.txt_CreditCard.Location = new System.Drawing.Point(573, 340);
-            this.txt_CreditCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_CreditCard.Location = new System.Drawing.Point(430, 276);
             this.txt_CreditCard.Name = "txt_CreditCard";
-            this.txt_CreditCard.Size = new System.Drawing.Size(275, 22);
+            this.txt_CreditCard.Size = new System.Drawing.Size(207, 20);
             this.txt_CreditCard.TabIndex = 14;
-            this.txt_CreditCard.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.txt_CreditCard.Validating += new System.ComponentModel.CancelEventHandler(this.txt_CreditCard_Validating);
             // 
             // lb_CreditCard
             // 
             this.lb_CreditCard.AutoSize = true;
-            this.lb_CreditCard.Location = new System.Drawing.Point(361, 343);
-            this.lb_CreditCard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_CreditCard.Location = new System.Drawing.Point(271, 279);
             this.lb_CreditCard.Name = "lb_CreditCard";
-            this.lb_CreditCard.Size = new System.Drawing.Size(133, 17);
+            this.lb_CreditCard.Size = new System.Drawing.Size(99, 13);
             this.lb_CreditCard.TabIndex = 13;
             this.lb_CreditCard.Text = "Credit Card Number";
-            this.lb_CreditCard.Click += new System.EventHandler(this.label2_Click);
             // 
             // form_Rider
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txt_CreditCard);
             this.Controls.Add(this.lb_CreditCard);
             this.Controls.Add(this.btn_SubmitRideRequest);
@@ -223,7 +207,6 @@
             this.Controls.Add(this.cb_State);
             this.Controls.Add(this.lb_City);
             this.Controls.Add(this.lb_title);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "form_Rider";
             this.Text = "form_Rider";
             ((System.ComponentModel.ISupportInitialize)(this.Rider_ErrorProvider)).EndInit();

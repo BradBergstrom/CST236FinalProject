@@ -15,3 +15,21 @@ C:\Users\bberg\Documents\GitHub\CST324TermProject\Application\CST324_TermProject
 C:\Users\bberg\Documents\GitHub\CST324TermProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Migrations.InitialMigration.resources
 C:\Users\bberg\Documents\GitHub\CST324TermProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.csproj.CopyComplete
 C:\Users\bberg\Documents\GitHub\CST324TermProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.form_Admin.resources
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\bin\Debug\CST324_TermProject_RideShare.exe.config
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\bin\Debug\CST324_TermProject_RideShare.exe
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\bin\Debug\CST324_TermProject_RideShare.pdb
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\bin\Debug\EntityFramework.dll
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\bin\Debug\EntityFramework.xml
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.csprojAssemblyReference.cache
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.form_Admin.resources
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.form_register.resources
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.form_Rider.resources
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Migrations.InitialMigration.resources
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Properties.Resources.resources
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.csproj.GenerateResource.cache
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.csproj.CoreCompileInputs.cache
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.csproj.CopyComplete
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.exe
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.pdb
