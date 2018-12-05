@@ -18,7 +18,7 @@ namespace CST324_TermProject_RideShare.Properties
         public int RideRequestID { get; set; }
 
         [Column("CreditCard#")]
-        public int? CreditCard_ { get; set; }
+        public string CreditCard_ { get; set; }
 
         [Required]
         [StringLength(255)]

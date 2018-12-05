@@ -35,7 +35,7 @@ namespace CST324_TermProject_RideShare
                 TimeSpan dtime = TimeSpan.Parse(values);
                 user.Location = txt_destination.Text + " " + cb_State.Text + ", OR";
                 request.Destination = txt_destination.Text + " " + cb_State.Text + ", OR";
-                request.CreditCard_ = Convert.ToInt32(txt_CreditCard.Text);
+                request.CreditCard_ = txt_CreditCard.Text;
                 request.Rider_Desired_Time = dtime;
                 rider.RideRequest1 = request;
                 user.Rider = rider;
@@ -49,89 +49,90 @@ namespace CST324_TermProject_RideShare
             }
 
         }
-        public bool IsValidTimeFormat(string input)
-        {
-            TimeSpan dummyOutput;
-            return TimeSpan.TryParse(input, out dummyOutput);
-        }
+        //public bool IsValidTimeFormat(string input)
+        //{
+        //    TimeSpan dummyOutput;
+        //    return TimeSpan.TryParse(input, out dummyOutput);
+        //}
 
-        private void txt_StreetAddress_Validating(object sender, CancelEventArgs e)
-        {
-            if(string.IsNullOrEmpty(txt_StreetAddress.Text))
-            {
-                e.Cancel = true;
-                txt_StreetAddress.Focus();
-                Rider_ErrorProvider.SetError(txt_StreetAddress, "Please enter a street Address");
-            }
-            else
-            {
-                e.Cancel = true;
-                Rider_ErrorProvider.SetError(txt_StreetAddress, null);
-            }
+        //private void txt_StreetAddress_Validating(object sender, CancelEventArgs e)
+        //{
+        //    if(string.IsNullOrEmpty(txt_StreetAddress.Text))
+        //    {
+        //        e.Cancel = true;
+        //        txt_StreetAddress.Select(0, txt_StreetAddress.Text.Length);
+        //        Rider_ErrorProvider.SetError(txt_StreetAddress, "Please enter a street Address");
+        //    }
+        //    else
+        //    {
+        //        e.Cancel = true;
+        //        Rider_ErrorProvider.SetError(txt_StreetAddress, null);
+        //    }
             
-        }
+        //}
 
-        private void txt_destination_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txt_destination.Text))
-            {
-                e.Cancel = true;
-                txt_destination.Focus();
-                Rider_ErrorProvider.SetError(txt_destination, "Please enter a street Address");
-            }
-            else
-            {
-                e.Cancel = true;
-                Rider_ErrorProvider.SetError(txt_destination, null);
-            }
-        }
+        //private void txt_destination_Validating(object sender, CancelEventArgs e)
+        //{
+        //    if (string.IsNullOrEmpty(txt_destination.Text))
+        //    {
+        //        e.Cancel = true;
+        //        txt_destination.Select(0, txt_destination.Text.Length);
+        //        Rider_ErrorProvider.SetError(txt_destination, "Please enter a street Address");
+        //    }
+        //    else
+        //    {
+        //        e.Cancel = true;
+        //        Rider_ErrorProvider.SetError(txt_destination, null);
+        //    }
+        //}
 
-        private void txt_DesiredTime_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txt_DesiredTime.Text))
-            {
-                e.Cancel = true;
-                txt_DesiredTime.Focus();
-                Rider_ErrorProvider.SetError(txt_DesiredTime, "Please enter a street Address");
-            }
-            else if (IsValidTimeFormat(txt_DesiredTime.Text))
-            {
-                e.Cancel = true;
-                txt_DesiredTime.Focus();
-                Rider_ErrorProvider.SetError(txt_DesiredTime, "Please check if Desired time is correct");
+        //private void txt_DesiredTime_Validating(object sender, CancelEventArgs e)
+        //{
+        //    if (string.IsNullOrEmpty(txt_DesiredTime.Text))
+        //    {
+        //        e.Cancel = true;
+        //        txt_DesiredTime.Select(0, txt_DesiredTime.Text.Length);
+        //        Rider_ErrorProvider.SetError(txt_DesiredTime, "Please enter a Desired Time");
+        //    }
+        //    else if (false)//IsValidTimeFormat(txt_DesiredTime.Text))
+        //    {
+        //        e.Cancel = true;
+        //        txt_DesiredTime.Focus();
+        //        Rider_ErrorProvider.SetError(txt_DesiredTime, "Please check if Desired time is correct");
 
-            }
-            else
-            {
-                e.Cancel = true;
-                Rider_ErrorProvider.SetError(txt_DesiredTime, null);
-            }
-        }
-
-
+        //    }
+        //    else
+        //    {
+        //        e.Cancel = true;
+        //        Rider_ErrorProvider.SetError(txt_DesiredTime, null);
+        //    }
+        //}
 
 
 
-        private void txt_CreditCard_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txt_CreditCard.Text))
-            {
-                e.Cancel = true;
-                txt_CreditCard.Focus();
-                Rider_ErrorProvider.SetError(txt_CreditCard, "Please enter a street Address");
-            }
-            else if (txt_CreditCard.Text.Trim().Length != 16)
-            {
-                e.Cancel = true;
-                txt_CreditCard.Focus();
-                Rider_ErrorProvider.SetError(txt_CreditCard, "Please check if Credit Card is Correct");
 
-            }
-            else
-            {
-                e.Cancel = true;
-                Rider_ErrorProvider.SetError(txt_CreditCard, null);
-            }
-        }
+
+        //private void txt_CreditCard_Validating(object sender, CancelEventArgs e)
+        //{
+        //    if (string.IsNullOrEmpty(txt_CreditCard.Text))
+        //    {
+        //        e.Cancel = true;
+        //        txt_CreditCard.Select(0, txt_CreditCard.Text.Length);
+        //        this.Rider_ErrorProvider.SetError(txt_CreditCard, "Please enter a street Address");
+        //    }
+        //    else if (txt_CreditCard.Text.Trim().Length == 16)
+        //    {
+        //        e.Cancel = true;
+        //        txt_CreditCard.Select(0, txt_CreditCard.Text.Length);
+        //        this.Rider_ErrorProvider.SetError(txt_CreditCard, "Please check if Credit Card is Correct");
+
+        //    }
+
+        //}
+
+        //private void txt_StreetAddress_Validated(object sender, EventArgs e)
+        //{
+        //    this.Rider_ErrorProvider.SetError(txt_CreditCard, null);
+        //}
     }
 }
