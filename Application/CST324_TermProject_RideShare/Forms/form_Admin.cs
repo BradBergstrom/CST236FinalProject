@@ -14,6 +14,8 @@ namespace CST324_TermProject_RideShare
     public partial class form_Admin : Form
     {
         private OIT_RideShare _dbContext;
+        User current_User;
+        RideRequest current_request;
         public form_Admin()
         {
             InitializeComponent();
@@ -29,31 +31,26 @@ namespace CST324_TermProject_RideShare
             {
                 listb_Requests.Items.Add(u.RideRequestID);
             }
+            current_request = new RideRequest();
+            current_User = new User();
 
         }
 
 
 
-        private void btn_Rider_Delete_Click(object sender, EventArgs e)
-        {
-        }
 
-        private void listb_Users_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-           
-        }
 
         private void listb_Requests_MouseClick(object sender, MouseEventArgs e)
         {
             var request = _dbContext.RideRequests.ToList().FirstOrDefault(g => g.RideRequestID.Equals(Convert.ToInt32(listb_Requests.GetItemText(listb_Requests.SelectedItem))));
             var rider = _dbContext.Riders.ToList().FirstOrDefault(g => g.RideRequest.Equals(Convert.ToInt32(listb_Requests.GetItemText(listb_Requests.SelectedItem))));
             var driver = _dbContext.Drivers.ToList().FirstOrDefault(g => g.RideRequests.Equals(Convert.ToInt32(listb_Requests.GetItemText(listb_Requests.SelectedItem))));
-
+            current_request = request;
             tb_Details_Requests.Text = "RequestID: " + request.RideRequestID.ToString()
-                                + "\nDestination: " + request.Destination.ToString()
-                                + "\nDesired Time " + request.Rider_Desired_Time.ToString()
-                                + "\nDriver ETA: " + request.Driver_ETA.ToString()
-                                + "\nCredit Card#: " + request.CreditCard_.ToString();
+                                + Environment.NewLine+"Destination: " + request.Destination.ToString()
+                                + Environment.NewLine+"Desired Time " + request.Rider_Desired_Time.ToString()
+                                + Environment.NewLine+"Driver ETA: " + request.Driver_ETA.ToString()
+                                + Environment.NewLine + "Credit Card#: " + request.CreditCard_.ToString();
             if (rider != null)
             {
                 tb_Details_Requests.Text += "\nRiderID: " + rider.RiderID.ToString();
@@ -68,11 +65,17 @@ namespace CST324_TermProject_RideShare
         private void listb_Users_MouseClick(object sender, MouseEventArgs e)
         {
             var user = _dbContext.Users.ToList().FirstOrDefault(g => g.UserID.Equals(Convert.ToInt32(listb_Users.GetItemText(listb_Users.SelectedItem))));
+            current_User = user;
             tb_Details_User.Text = "UserID: " + user.UserID.ToString()
-                                + "\nRiderID: " + user.RiderID.ToString()
-                                + "\nDriverID: " + user.DriverID.ToString()
-                                + "\nAdmin: " + user.Admin.ToString()
-                                + "\nLocation: " + user.Location.ToString();
+                                +Environment.NewLine+ "RiderID: " + user.RiderID.ToString()
+                                +Environment.NewLine+ "DriverID: " + user.DriverID.ToString()
+                                +Environment.NewLine+ "Admin: " + user.Admin.ToString()
+                                + Environment.NewLine + "Location: " + user.Location.ToString();
+        }
+
+        private void btn_Finish_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

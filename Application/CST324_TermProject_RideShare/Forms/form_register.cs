@@ -85,6 +85,12 @@ namespace CST324_TermProject_RideShare
                     register_tb.Focus();
                     register_ep.SetError(register_tb, "Inncorrect Password");
                 }
+                else
+                {
+                    this.Hide();
+                    Form rf = new form_Admin();
+                    rf.ShowDialog();
+                }
 
             } else
             {
