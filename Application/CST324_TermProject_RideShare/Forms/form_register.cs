@@ -19,6 +19,7 @@ namespace CST324_TermProject_RideShare
         {
            // pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             InitializeComponent();
+            _dbContext = new OIT_RideShare();
         }
 
         private void form_register_Load(object sender, EventArgs e)
@@ -55,7 +56,55 @@ namespace CST324_TermProject_RideShare
         private void enter_btn_Click(object sender, EventArgs e)
         {
             //Provide logic to switch to the driver form with the provided firstname
+            if (string.IsNullOrEmpty(register_tb.Text))
+            {
+                //e.Cancel = true;
+                register_tb.Focus();
+                register_ep.SetError(register_tb, "Please enter a first name");
 
+            }
+            else if (loginQuestion_lb.Text.ToString().Equals("      Enter a Password"))
+            {
+                if (!register_tb.Text.ToString().Equals(password))
+                {
+                  //  e.Cancel = true;
+                    register_tb.Focus();
+                    register_ep.SetError(register_tb, "Inncorrect Password");
+                } else
+                {
+                    //TODO let the user go to admin page here
+                    this.Hide();
+                    var form3 = new form_Admin();
+                    form3.Closed += (s, args) => this.Close();
+                    form3.Show();
+
+                }
+
+            }
+            else
+            {
+
+                //TODO check to see if first name added was in the driver database
+                var driver = _dbContext.Drivers.SingleOrDefault(c => c.FirstName.Equals(register_tb.Text));
+              
+                if (driver == null)
+                {
+                    register_tb.Focus();
+                    register_ep.SetError(register_tb, "Did not find a driver with that name");
+                   // MessageBox.Show("Did not find a driver with that name");
+                }
+                else
+                {
+                    //Go to the driver form with the selected driver
+                    int id = driver.DriverID;
+                    _dbContext.SaveChanges();
+                    this.Hide();
+                    var form2 = new form_Driver(id);
+                    form2.Closed += (s, args) => this.Close();
+                    form2.Show();
+                }
+
+            }
         }
 
         private void back_btn_Click(object sender, EventArgs e)
@@ -74,43 +123,7 @@ namespace CST324_TermProject_RideShare
 
         private void register_tb_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrEmpty(register_tb.Text)){
-                e.Cancel = true;
-                register_tb.Focus();
-                register_ep.SetError(register_tb,"Please enter a first name");
-
-            } else if(loginQuestion_lb.Text.ToString().Equals("      Enter a Password"))
-            {
-                if (!register_tb.Text.ToString().Equals(password))
-                {
-                    e.Cancel = true;
-                    register_tb.Focus();
-                    register_ep.SetError(register_tb, "Inncorrect Password");
-                }
-
-            } else
-            {
-                //TODO check to see if first name added was in the driver database
-
-                //TODO check to see if first name added was in the driver database
-                var driver = _dbContext.Drivers.SingleOrDefault(c => c.FirstName.Equals(register_tb.Text));
-
-                if (driver == null)
-                {
-                    MessageBox.Show("Did not find a driver with that name");
-                }
-                else
-                {
-                    //Go to the driver form with the selected driver
-                    int id = driver.DriverID;
-                    _dbContext.SaveChanges();
-                    this.Hide();
-                    var form2 = new form_Driver(id);
-                    form2.Closed += (s, args) => this.Close();
-                    form2.Show();
-                }
-
-            }
+            
         }
     }
     }

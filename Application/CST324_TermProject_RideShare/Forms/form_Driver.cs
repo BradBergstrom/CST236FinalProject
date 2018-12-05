@@ -17,9 +17,10 @@ namespace CST324_TermProject_RideShare
         private Driver driver;
         public form_Driver(int id)
         {
-            var driver = _dbContext.Drivers.SingleOrDefault(c => c.DriverID == id);
-
             InitializeComponent();
+            _dbContext = new OIT_RideShare();
+            var driver = _dbContext.Drivers.SingleOrDefault(c => c.DriverID == id);
+    
         }
 
 
