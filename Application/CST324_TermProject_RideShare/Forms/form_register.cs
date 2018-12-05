@@ -58,9 +58,19 @@ namespace CST324_TermProject_RideShare
             //Provide logic to switch to the driver form with the provided firstname
             if (string.IsNullOrEmpty(register_tb.Text))
             {
-                //e.Cancel = true;
-                register_tb.Focus();
-                register_ep.SetError(register_tb, "Please enter a first name");
+                if (loginQuestion_lb.Text.ToString().Equals("      Enter a Password"))
+                {
+                    //e.Cancel = true;
+                    register_tb.Focus();
+                    register_ep.SetError(register_tb, "Please enter a password");
+                }
+                else
+                {
+                    //e.Cancel = true;
+                    register_tb.Focus();
+                    register_ep.SetError(register_tb, "Please enter a first name");
+                }
+               
 
             }
             else if (loginQuestion_lb.Text.ToString().Equals("      Enter a Password"))
