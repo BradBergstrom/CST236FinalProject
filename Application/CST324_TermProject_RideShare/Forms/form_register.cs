@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CST324_TermProject_RideShare.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace CST324_TermProject_RideShare
 {
     public partial class form_register : Form
     {
+        private OIT_RideShare _dbContext;
         private string password = "cst3242018";
         public form_register()
         {
@@ -90,6 +92,23 @@ namespace CST324_TermProject_RideShare
             {
                 //TODO check to see if first name added was in the driver database
 
+                //TODO check to see if first name added was in the driver database
+                var driver = _dbContext.Drivers.SingleOrDefault(c => c.FirstName.Equals(register_tb.Text));
+
+                if (driver == null)
+                {
+                    MessageBox.Show("Did not find a driver with that name");
+                }
+                else
+                {
+                    //Go to the driver form with the selected driver
+                    int id = driver.DriverID;
+                    _dbContext.SaveChanges();
+                    this.Hide();
+                    var form2 = new form_Driver(id);
+                    form2.Closed += (s, args) => this.Close();
+                    form2.Show();
+                }
 
             }
         }

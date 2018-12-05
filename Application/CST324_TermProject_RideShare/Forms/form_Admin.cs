@@ -12,8 +12,8 @@ using System.Windows.Forms;
 namespace CST324_TermProject_RideShare
 {
     public partial class form_Admin : Form
-    {
-        private OIT_RideShare _dbContext;
+        {
+            private OIT_RideShare _dbContext;
         public form_Admin()
         {
             InitializeComponent();
