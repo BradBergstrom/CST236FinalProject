@@ -89,6 +89,9 @@
     <EmbeddedResource Include="Forms\form_Admin.resx">
       <DependentUpon>form_Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\form_Driver.resx">
+      <DependentUpon>form_Driver.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\form_register.resx">
       <DependentUpon>form_register.cs</DependentUpon>
     </EmbeddedResource>
