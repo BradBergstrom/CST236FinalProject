@@ -30,7 +30,7 @@
         {
             this.listb_Users = new System.Windows.Forms.ListBox();
             this.listb_Requests = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Rider_Update = new System.Windows.Forms.Button();
             this.btn_Rider_Delete = new System.Windows.Forms.Button();
             this.btn_Rider_Add = new System.Windows.Forms.Button();
             this.btn_Requests_Add = new System.Windows.Forms.Button();
@@ -65,15 +65,16 @@
             this.listb_Requests.TabIndex = 2;
             this.listb_Requests.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listb_Requests_MouseClick);
             // 
-            // button1
+            // btn_Rider_Update
             // 
-            this.button1.Location = new System.Drawing.Point(9, 292);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 19);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Rider_Update.Location = new System.Drawing.Point(9, 292);
+            this.btn_Rider_Update.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Rider_Update.Name = "btn_Rider_Update";
+            this.btn_Rider_Update.Size = new System.Drawing.Size(58, 19);
+            this.btn_Rider_Update.TabIndex = 3;
+            this.btn_Rider_Update.Text = "Update";
+            this.btn_Rider_Update.UseVisualStyleBackColor = true;
+            this.btn_Rider_Update.Click += new System.EventHandler(this.btn_Rider_Update_Click);
             // 
             // btn_Rider_Delete
             // 
@@ -94,6 +95,7 @@
             this.btn_Rider_Add.TabIndex = 5;
             this.btn_Rider_Add.Text = "Add";
             this.btn_Rider_Add.UseVisualStyleBackColor = true;
+            this.btn_Rider_Add.Click += new System.EventHandler(this.btn_Rider_Add_Click);
             // 
             // btn_Requests_Add
             // 
@@ -131,6 +133,7 @@
             this.tb_Details_User.Margin = new System.Windows.Forms.Padding(2);
             this.tb_Details_User.Multiline = true;
             this.tb_Details_User.Name = "tb_Details_User";
+            this.tb_Details_User.ReadOnly = true;
             this.tb_Details_User.Size = new System.Drawing.Size(122, 238);
             this.tb_Details_User.TabIndex = 12;
             // 
@@ -180,6 +183,7 @@
             this.tb_Details_Requests.Margin = new System.Windows.Forms.Padding(2);
             this.tb_Details_Requests.Multiline = true;
             this.tb_Details_Requests.Name = "tb_Details_Requests";
+            this.tb_Details_Requests.ReadOnly = true;
             this.tb_Details_Requests.Size = new System.Drawing.Size(122, 238);
             this.tb_Details_Requests.TabIndex = 16;
             // 
@@ -211,7 +215,7 @@
             this.Controls.Add(this.btn_Requests_Update);
             this.Controls.Add(this.btn_Rider_Add);
             this.Controls.Add(this.btn_Rider_Delete);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Rider_Update);
             this.Controls.Add(this.listb_Requests);
             this.Controls.Add(this.listb_Users);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -226,7 +230,7 @@
 
         private System.Windows.Forms.ListBox listb_Users;
         private System.Windows.Forms.ListBox listb_Requests;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Rider_Update;
         private System.Windows.Forms.Button btn_Rider_Delete;
         private System.Windows.Forms.Button btn_Rider_Add;
         private System.Windows.Forms.Button btn_Requests_Add;

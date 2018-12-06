@@ -34,3 +34,9 @@ C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_Ter
 C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.exe
 C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.pdb
 C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Migrations.CreditCardToString.resources
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Forms.form_Admin_Update.resources
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Forms.form_admin_add_user.resources
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Migrations.ChangedAdmin.resources
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Forms.form_admin_add_user_driver.resources
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Migrations.AdminsettoINTwithnoProperties.resources
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Migrations.AddedIdentitytoUserID.resources

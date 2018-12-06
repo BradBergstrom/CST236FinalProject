@@ -33,7 +33,8 @@ namespace CST324_TermProject_RideShare
             {
                 string values = txt_DesiredTime.Text;
                 TimeSpan dtime = TimeSpan.Parse(values);
-                user.Location = txt_destination.Text + " " + cb_State.Text + ", OR";
+                user.Admin = 0;
+                user.Location = txt_StreetAddress.Text + " " + cb_State.Text + ", OR";
                 request.Destination = txt_destination.Text + " " + cb_State.Text + ", OR";
                 request.CreditCard_ = txt_CreditCard.Text;
                 request.Rider_Desired_Time = dtime;

@@ -60,6 +60,24 @@
     <Compile Include="Forms\form_Admin.Designer.cs">
       <DependentUpon>form_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\form_admin_add_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\form_admin_add_user.Designer.cs">
+      <DependentUpon>form_admin_add_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\form_admin_add_user_driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\form_admin_add_user_driver.Designer.cs">
+      <DependentUpon>form_admin_add_user_driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\form_Admin_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\form_Admin_Update.Designer.cs">
+      <DependentUpon>form_Admin_Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\form_Driver.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,12 +104,33 @@
     <Compile Include="Migrations\201812050316384_CreditCardToString.Designer.cs">
       <DependentUpon>201812050316384_CreditCardToString.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812060603370_Changed Admin.cs" />
+    <Compile Include="Migrations\201812060603370_Changed Admin.Designer.cs">
+      <DependentUpon>201812060603370_Changed Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812060703456_Admin set to INT with no Properties.cs" />
+    <Compile Include="Migrations\201812060703456_Admin set to INT with no Properties.Designer.cs">
+      <DependentUpon>201812060703456_Admin set to INT with no Properties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812060710435_AddedIdentity to UserID.cs" />
+    <Compile Include="Migrations\201812060710435_AddedIdentity to UserID.Designer.cs">
+      <DependentUpon>201812060710435_AddedIdentity to UserID.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\User.cs" />
     <EmbeddedResource Include="Forms\form_Admin.resx">
       <DependentUpon>form_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\form_admin_add_user.resx">
+      <DependentUpon>form_admin_add_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\form_admin_add_user_driver.resx">
+      <DependentUpon>form_admin_add_user_driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\form_Admin_Update.resx">
+      <DependentUpon>form_Admin_Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\form_register.resx">
       <DependentUpon>form_register.cs</DependentUpon>
@@ -104,6 +143,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812050316384_CreditCardToString.resx">
       <DependentUpon>201812050316384_CreditCardToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812060603370_Changed Admin.resx">
+      <DependentUpon>201812060603370_Changed Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812060703456_Admin set to INT with no Properties.resx">
+      <DependentUpon>201812060703456_Admin set to INT with no Properties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812060710435_AddedIdentity to UserID.resx">
+      <DependentUpon>201812060710435_AddedIdentity to UserID.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
