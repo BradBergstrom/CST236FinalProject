@@ -190,8 +190,6 @@
             this.txt_CreditCard.Name = "txt_CreditCard";
             this.txt_CreditCard.Size = new System.Drawing.Size(275, 22);
             this.txt_CreditCard.TabIndex = 14;
-            this.txt_CreditCard.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.txt_CreditCard.Validating += new System.ComponentModel.CancelEventHandler(this.txt_CreditCard_Validating);
             // 
             // lb_CreditCard
             // 
@@ -202,7 +200,6 @@
             this.lb_CreditCard.Size = new System.Drawing.Size(133, 17);
             this.lb_CreditCard.TabIndex = 13;
             this.lb_CreditCard.Text = "Credit Card Number";
-            this.lb_CreditCard.Click += new System.EventHandler(this.label2_Click);
             // 
             // form_Rider
             // 

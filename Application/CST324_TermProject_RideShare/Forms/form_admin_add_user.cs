@@ -22,7 +22,10 @@ namespace CST324_TermProject_RideShare.Forms
             _dbContext = new OIT_RideShare();
             user = new User();
             driver = new Driver();
-         
+
+            tb_FirstName.Visible = false;
+            tb_LicensePlate.Visible = false;
+            tb_VehicleType.Visible = false;
         }
 
 
@@ -70,8 +73,7 @@ namespace CST324_TermProject_RideShare.Forms
                 else
                 {
 
-                    Form form = new form_admin_add_user_driver(user);
-                    form.Show();
+                    
                     tb_Location.Text = string.Empty;
                     tb_Admin.Text = string.Empty;
                     tb_DriverID.Text = string.Empty;
@@ -89,6 +91,22 @@ namespace CST324_TermProject_RideShare.Forms
                 tb_RiderID.Text = string.Empty;
             }
 
+        }
+
+        private void tb_DriverID_TextChanged(object sender, EventArgs e)
+        {
+            if(tb_DriverID.Text != string.Empty)
+            {
+                tb_FirstName.Visible =      true;
+                tb_LicensePlate.Visible =   true;
+                tb_VehicleType.Visible =    true;
+            }
+            else
+            {
+                tb_FirstName.Visible = false;
+                tb_LicensePlate.Visible = false;
+                tb_VehicleType.Visible = false;
+            }
         }
     }
 }

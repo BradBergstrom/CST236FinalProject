@@ -66,12 +66,6 @@
     <Compile Include="Forms\form_admin_add_user.Designer.cs">
       <DependentUpon>form_admin_add_user.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\form_admin_add_user_driver.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\form_admin_add_user_driver.Designer.cs">
-      <DependentUpon>form_admin_add_user_driver.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\form_Admin_Update.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,9 +107,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\form_admin_add_user.resx">
       <DependentUpon>form_admin_add_user.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\form_admin_add_user_driver.resx">
-      <DependentUpon>form_admin_add_user_driver.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\form_Admin_Update.resx">
       <DependentUpon>form_Admin_Update.cs</DependentUpon>

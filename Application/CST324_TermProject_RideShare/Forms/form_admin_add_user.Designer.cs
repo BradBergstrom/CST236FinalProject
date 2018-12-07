@@ -38,6 +38,12 @@
             this.lb_RiderID = new System.Windows.Forms.Label();
             this.btn_add = new System.Windows.Forms.Button();
             this.btn_Finish = new System.Windows.Forms.Button();
+            this.lb_VehicleType = new System.Windows.Forms.Label();
+            this.lb_LicensePlate = new System.Windows.Forms.Label();
+            this.lb_FirstName = new System.Windows.Forms.Label();
+            this.tb_VehicleType = new System.Windows.Forms.TextBox();
+            this.tb_LicensePlate = new System.Windows.Forms.TextBox();
+            this.tb_FirstName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tb_Location
@@ -56,10 +62,11 @@
             // 
             // tb_DriverID
             // 
-            this.tb_DriverID.Location = new System.Drawing.Point(80, 64);
+            this.tb_DriverID.Location = new System.Drawing.Point(330, 12);
             this.tb_DriverID.Name = "tb_DriverID";
             this.tb_DriverID.Size = new System.Drawing.Size(165, 20);
             this.tb_DriverID.TabIndex = 2;
+            this.tb_DriverID.TextChanged += new System.EventHandler(this.tb_DriverID_TextChanged);
             // 
             // tb_RiderID
             // 
@@ -89,7 +96,7 @@
             // lb_driverID
             // 
             this.lb_driverID.AutoSize = true;
-            this.lb_driverID.Location = new System.Drawing.Point(3, 67);
+            this.lb_driverID.Location = new System.Drawing.Point(253, 15);
             this.lb_driverID.Name = "lb_driverID";
             this.lb_driverID.Size = new System.Drawing.Size(46, 13);
             this.lb_driverID.TabIndex = 7;
@@ -123,11 +130,65 @@
             this.btn_Finish.Text = "Finish";
             this.btn_Finish.UseVisualStyleBackColor = true;
             // 
+            // lb_VehicleType
+            // 
+            this.lb_VehicleType.AutoSize = true;
+            this.lb_VehicleType.Location = new System.Drawing.Point(253, 95);
+            this.lb_VehicleType.Name = "lb_VehicleType";
+            this.lb_VehicleType.Size = new System.Drawing.Size(66, 13);
+            this.lb_VehicleType.TabIndex = 23;
+            this.lb_VehicleType.Text = "VehicleType";
+            // 
+            // lb_LicensePlate
+            // 
+            this.lb_LicensePlate.AutoSize = true;
+            this.lb_LicensePlate.Location = new System.Drawing.Point(253, 69);
+            this.lb_LicensePlate.Name = "lb_LicensePlate";
+            this.lb_LicensePlate.Size = new System.Drawing.Size(68, 13);
+            this.lb_LicensePlate.TabIndex = 22;
+            this.lb_LicensePlate.Text = "LicensePlate";
+            // 
+            // lb_FirstName
+            // 
+            this.lb_FirstName.AutoSize = true;
+            this.lb_FirstName.Location = new System.Drawing.Point(253, 43);
+            this.lb_FirstName.Name = "lb_FirstName";
+            this.lb_FirstName.Size = new System.Drawing.Size(52, 13);
+            this.lb_FirstName.TabIndex = 21;
+            this.lb_FirstName.Text = "Firstname";
+            // 
+            // tb_VehicleType
+            // 
+            this.tb_VehicleType.Location = new System.Drawing.Point(330, 92);
+            this.tb_VehicleType.Name = "tb_VehicleType";
+            this.tb_VehicleType.Size = new System.Drawing.Size(165, 20);
+            this.tb_VehicleType.TabIndex = 20;
+            // 
+            // tb_LicensePlate
+            // 
+            this.tb_LicensePlate.Location = new System.Drawing.Point(330, 66);
+            this.tb_LicensePlate.Name = "tb_LicensePlate";
+            this.tb_LicensePlate.Size = new System.Drawing.Size(165, 20);
+            this.tb_LicensePlate.TabIndex = 19;
+            // 
+            // tb_FirstName
+            // 
+            this.tb_FirstName.Location = new System.Drawing.Point(330, 40);
+            this.tb_FirstName.Name = "tb_FirstName";
+            this.tb_FirstName.Size = new System.Drawing.Size(165, 20);
+            this.tb_FirstName.TabIndex = 18;
+            // 
             // form_admin_add_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(257, 185);
+            this.ClientSize = new System.Drawing.Size(517, 187);
+            this.Controls.Add(this.lb_VehicleType);
+            this.Controls.Add(this.lb_LicensePlate);
+            this.Controls.Add(this.lb_FirstName);
+            this.Controls.Add(this.tb_VehicleType);
+            this.Controls.Add(this.tb_LicensePlate);
+            this.Controls.Add(this.tb_FirstName);
             this.Controls.Add(this.btn_Finish);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.lb_RiderID);
@@ -157,5 +218,11 @@
         private System.Windows.Forms.Label lb_RiderID;
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Button btn_Finish;
+        private System.Windows.Forms.Label lb_VehicleType;
+        private System.Windows.Forms.Label lb_LicensePlate;
+        private System.Windows.Forms.Label lb_FirstName;
+        private System.Windows.Forms.TextBox tb_VehicleType;
+        private System.Windows.Forms.TextBox tb_LicensePlate;
+        private System.Windows.Forms.TextBox tb_FirstName;
     }
 }
