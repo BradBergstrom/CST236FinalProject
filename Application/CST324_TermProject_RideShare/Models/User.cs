@@ -16,7 +16,7 @@ namespace CST324_TermProject_RideShare.Properties
         [StringLength(255)]
         public string Location { get; set; }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Admin { get; set; }
 
         public int? RiderID { get; set; }
