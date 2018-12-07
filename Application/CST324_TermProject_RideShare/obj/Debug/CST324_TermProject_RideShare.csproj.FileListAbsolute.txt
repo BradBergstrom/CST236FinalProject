@@ -35,7 +35,6 @@ C:\Users\bberg\Documents\GitHub\CST324FinalProject\Application\CST324_TermProjec
 C:\Users\bberg\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.pdb
 C:\Users\bberg\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.form_Driver.resources
 C:\Users\bberg\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Forms.form_admin_add_user.resources
-C:\Users\bberg\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Forms.form_admin_add_user_driver.resources
 C:\Users\bberg\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Forms.form_Admin_Update.resources
 C:\Users\Latitude 7450\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\bin\Debug\CST324_TermProject_RideShare.exe.config
 C:\Users\Latitude 7450\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\bin\Debug\CST324_TermProject_RideShare.exe
@@ -83,3 +82,5 @@ C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_Ter
 C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.exe
 C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.pdb
 C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Migrations.UserTest.resources
+C:\Users\bberg\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Migrations.UserSetIdentity.resources
+C:\Users\bberg\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Migrations.UserTest.resources
