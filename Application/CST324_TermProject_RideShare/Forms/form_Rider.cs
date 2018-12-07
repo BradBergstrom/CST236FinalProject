@@ -29,8 +29,7 @@ namespace CST324_TermProject_RideShare
 
         private void btn_SubmitRideRequest_Click(object sender, EventArgs e)
         {
-            if(ValidateChildren(ValidationConstraints.Enabled))
-            {
+
                 string values = txt_DesiredTime.Text;
                 TimeSpan dtime = TimeSpan.Parse(values);
                 user.Location = txt_destination.Text + " " + cb_State.Text + ", OR";
@@ -46,7 +45,7 @@ namespace CST324_TermProject_RideShare
                 this.Hide();
                 form_register fr = new form_register();
                 fr.ShowDialog();
-            }
+
 
         }
         public bool IsValidTimeFormat(string input)
