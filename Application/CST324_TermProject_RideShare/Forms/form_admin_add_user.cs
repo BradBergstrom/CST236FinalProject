@@ -72,12 +72,21 @@ namespace CST324_TermProject_RideShare.Forms
                 }
                 else
                 {
-
-                    
+                    driver.DriverID = Convert.ToInt32(tb_DriverID.Text);
+                    driver.LicensePlate = tb_LicensePlate.Text;
+                    driver.VehicleType = tb_VehicleType.Text;
+                    driver.FirstName = tb_FirstName.Text;
+                    _dbContext.Users.Add(user);
+                    _dbContext.SaveChanges();
+                    MessageBox.Show("Successfully Added User!");
                     tb_Location.Text = string.Empty;
                     tb_Admin.Text = string.Empty;
                     tb_DriverID.Text = string.Empty;
                     tb_RiderID.Text = string.Empty;
+                    tb_DriverID.Text = string.Empty;
+                    tb_LicensePlate.Text = string.Empty;
+                    tb_VehicleType.Text = string.Empty;
+                    tb_FirstName.Text = string.Empty;
                 }
             }
             else
@@ -95,11 +104,18 @@ namespace CST324_TermProject_RideShare.Forms
 
         private void tb_DriverID_TextChanged(object sender, EventArgs e)
         {
-            if(tb_DriverID.Text != string.Empty)
+            
+
+            if (tb_DriverID.Text != string.Empty)
             {
-                tb_FirstName.Visible =      true;
-                tb_LicensePlate.Visible =   true;
-                tb_VehicleType.Visible =    true;
+                var ifexist = _dbContext.Drivers.ToList().FirstOrDefault(d => d.DriverID.Equals(Convert.ToInt32(tb_DriverID.Text)));
+                if(ifexist == null)
+                {
+                    tb_FirstName.Visible = true;
+                    tb_LicensePlate.Visible = true;
+                    tb_VehicleType.Visible = true;
+                }
+
             }
             else
             {
