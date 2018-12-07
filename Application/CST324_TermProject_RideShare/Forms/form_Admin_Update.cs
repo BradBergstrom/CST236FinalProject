@@ -48,10 +48,29 @@ namespace CST324_TermProject_RideShare.Forms
                     tochange.Admin = Convert.ToInt32(tb_UpdateTo.Text);
                     break;
                 case "riderid":
-                    tochange.RiderID = Convert.ToInt32(tb_UpdateTo.Text);
+                    var ifexist = _dbContext.Riders.ToList().FirstOrDefault(d => d.RiderID.Equals(current.RiderID));
+                    if(ifexist !=null)
+                    {
+                        tochange.RiderID = Convert.ToInt32(tb_UpdateTo.Text);
+                        tochange.Rider = ifexist;
+                    }
+                    else
+                    {
+                        MessageBox.Show("There is no Rider under that ID!");
+                    }
+                    
                     break;
                 case "driverid":
-                    tochange.DriverID = Convert.ToInt32(tb_UpdateTo.Text);
+                    var temp = _dbContext.Drivers.ToList().FirstOrDefault(d => d.DriverID.Equals(current.DriverID));
+                    if (temp != null)
+                    {
+                        tochange.DriverID = Convert.ToInt32(tb_UpdateTo.Text);
+                        tochange.Driver = temp;
+                    }
+                    else
+                    {
+                        MessageBox.Show("There is no Driver under that ID!");
+                    }
                     break;
             }
             

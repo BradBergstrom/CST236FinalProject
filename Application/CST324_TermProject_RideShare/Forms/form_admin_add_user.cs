@@ -76,6 +76,9 @@ namespace CST324_TermProject_RideShare.Forms
                     driver.LicensePlate = tb_LicensePlate.Text;
                     driver.VehicleType = tb_VehicleType.Text;
                     driver.FirstName = tb_FirstName.Text;
+                    user.Driver = driver;
+                    user.DriverID = driver.DriverID;
+                    _dbContext.Drivers.Add(driver);
                     _dbContext.Users.Add(user);
                     _dbContext.SaveChanges();
                     MessageBox.Show("Successfully Added User!");
@@ -123,6 +126,11 @@ namespace CST324_TermProject_RideShare.Forms
                 tb_LicensePlate.Visible = false;
                 tb_VehicleType.Visible = false;
             }
+        }
+
+        private void btn_Finish_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

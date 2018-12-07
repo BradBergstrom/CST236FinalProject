@@ -129,6 +129,7 @@
             this.btn_Finish.TabIndex = 10;
             this.btn_Finish.Text = "Finish";
             this.btn_Finish.UseVisualStyleBackColor = true;
+            this.btn_Finish.Click += new System.EventHandler(this.btn_Finish_Click);
             // 
             // lb_VehicleType
             // 

@@ -82,3 +82,4 @@ C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_Ter
 C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.csproj.CopyComplete
 C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.exe
 C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.pdb
+C:\Users\Andrew Doser\Documents\GitHub\CST324FinalProject\Application\CST324_TermProject_RideShare\obj\Debug\CST324_TermProject_RideShare.Migrations.UserTest.resources

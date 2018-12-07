@@ -33,7 +33,7 @@ namespace CST324_TermProject_RideShare
                 listb_Requests.Items.Add(u.RideRequestID);
             }
             current_request = new RideRequest();
-            current_User = new User();
+            current_User = null;
 
         }
 
