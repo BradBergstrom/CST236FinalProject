@@ -44,6 +44,7 @@ namespace CST324_TermProject_RideShare.Forms
                 else
                 {
                     Rider rider = new Rider();
+                    rider.RiderID = Convert.ToInt32(tb_RiderID.Text);
                     user.Rider = rider;
                     user.RiderID = Convert.ToInt32(tb_RiderID.Text);
                 }

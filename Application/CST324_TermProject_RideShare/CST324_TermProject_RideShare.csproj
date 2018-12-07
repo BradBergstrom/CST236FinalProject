@@ -100,6 +100,10 @@
     <Compile Include="Migrations\201811282311581_Initial Migration.Designer.cs">
       <DependentUpon>201811282311581_Initial Migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812070535373_User Set Identity.cs" />
+    <Compile Include="Migrations\201812070535373_User Set Identity.Designer.cs">
+      <DependentUpon>201812070535373_User Set Identity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -127,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811282311581_Initial Migration.resx">
       <DependentUpon>201811282311581_Initial Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812070535373_User Set Identity.resx">
+      <DependentUpon>201812070535373_User Set Identity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

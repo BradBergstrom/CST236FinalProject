@@ -9,7 +9,7 @@ namespace CST324_TermProject_RideShare.Properties
     [Table("User")]
     public partial class User
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UserID { get; set; }
 
         [Required]
