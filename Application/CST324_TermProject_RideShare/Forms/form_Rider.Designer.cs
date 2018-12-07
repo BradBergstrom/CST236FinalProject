@@ -69,7 +69,6 @@
             this.lb_City.Size = new System.Drawing.Size(31, 17);
             this.lb_City.TabIndex = 1;
             this.lb_City.Text = "City";
-            this.lb_City.Click += new System.EventHandler(this.label1_Click);
             // 
             // cb_State
             // 
@@ -106,7 +105,6 @@
             this.txt_StreetAddress.Name = "txt_StreetAddress";
             this.txt_StreetAddress.Size = new System.Drawing.Size(275, 22);
             this.txt_StreetAddress.TabIndex = 5;
-            this.txt_StreetAddress.Validating += new System.ComponentModel.CancelEventHandler(this.txt_StreetAddress_Validating);
             // 
             // lb_UserPrompt_Location
             // 
@@ -147,7 +145,6 @@
             this.txt_destination.Name = "txt_destination";
             this.txt_destination.Size = new System.Drawing.Size(275, 22);
             this.txt_destination.TabIndex = 9;
-            this.txt_destination.Validating += new System.ComponentModel.CancelEventHandler(this.txt_destination_Validating);
             // 
             // txt_DesiredTime
             // 
@@ -156,7 +153,6 @@
             this.txt_DesiredTime.Name = "txt_DesiredTime";
             this.txt_DesiredTime.Size = new System.Drawing.Size(275, 22);
             this.txt_DesiredTime.TabIndex = 11;
-            this.txt_DesiredTime.Validating += new System.ComponentModel.CancelEventHandler(this.txt_DesiredTime_Validating);
             // 
             // lb_DesiredTime
             // 

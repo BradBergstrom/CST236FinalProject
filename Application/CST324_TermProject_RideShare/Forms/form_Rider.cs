@@ -26,10 +26,6 @@ namespace CST324_TermProject_RideShare
             request = new RideRequest();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_SubmitRideRequest_Click(object sender, EventArgs e)
         {
@@ -59,82 +55,82 @@ namespace CST324_TermProject_RideShare
             return TimeSpan.TryParse(input, out dummyOutput);
         }
 
-        private void txt_StreetAddress_Validating(object sender, CancelEventArgs e)
-        {
-            if(string.IsNullOrEmpty(txt_StreetAddress.Text))
-            {
-                e.Cancel = true;
-                txt_StreetAddress.Focus();
-                Rider_ErrorProvider.SetError(txt_StreetAddress, "Please enter a street Address");
-            }
-            else
-            {
-                e.Cancel = true;
-                Rider_ErrorProvider.SetError(txt_StreetAddress, null);
-            }
+        //private void txt_StreetAddress_Validating(object sender, CancelEventArgs e)
+        //{
+        //    if(string.IsNullOrEmpty(txt_StreetAddress.Text))
+        //    {
+        //        e.Cancel = true;
+        //        txt_StreetAddress.Focus();
+        //        Rider_ErrorProvider.SetError(txt_StreetAddress, "Please enter a street Address");
+        //    }
+        //    else
+        //    {
+        //        e.Cancel = true;
+        //        Rider_ErrorProvider.SetError(txt_StreetAddress, null);
+        //    }
             
-        }
+        //}
 
-        private void txt_destination_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txt_destination.Text))
-            {
-                e.Cancel = true;
-                txt_destination.Focus();
-                Rider_ErrorProvider.SetError(txt_destination, "Please enter a street Address");
-            }
-            else
-            {
-                e.Cancel = true;
-                Rider_ErrorProvider.SetError(txt_destination, null);
-            }
-        }
+        //private void txt_destination_Validating(object sender, CancelEventArgs e)
+        //{
+        //    if (string.IsNullOrEmpty(txt_destination.Text))
+        //    {
+        //        e.Cancel = true;
+        //        txt_destination.Focus();
+        //        Rider_ErrorProvider.SetError(txt_destination, "Please enter a street Address");
+        //    }
+        //    else
+        //    {
+        //        e.Cancel = true;
+        //        Rider_ErrorProvider.SetError(txt_destination, null);
+        //    }
+        //}
 
-        private void txt_DesiredTime_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txt_DesiredTime.Text))
-            {
-                e.Cancel = true;
-                txt_DesiredTime.Focus();
-                Rider_ErrorProvider.SetError(txt_DesiredTime, "Please enter a street Address");
-            }
-            else if (IsValidTimeFormat(txt_DesiredTime.Text))
-            {
-                e.Cancel = true;
-                txt_DesiredTime.Focus();
-                Rider_ErrorProvider.SetError(txt_DesiredTime, "Please check if Desired time is correct");
+        //private void txt_DesiredTime_Validating(object sender, CancelEventArgs e)
+        //{
+        //    if (string.IsNullOrEmpty(txt_DesiredTime.Text))
+        //    {
+        //        e.Cancel = true;
+        //        txt_DesiredTime.Focus();
+        //        Rider_ErrorProvider.SetError(txt_DesiredTime, "Please enter a street Address");
+        //    }
+        //    else if (IsValidTimeFormat(txt_DesiredTime.Text))
+        //    {
+        //        e.Cancel = true;
+        //        txt_DesiredTime.Focus();
+        //        Rider_ErrorProvider.SetError(txt_DesiredTime, "Please check if Desired time is correct");
 
-            }
-            else
-            {
-                e.Cancel = true;
-                Rider_ErrorProvider.SetError(txt_DesiredTime, null);
-            }
-        }
+        //    }
+        //    else
+        //    {
+        //        e.Cancel = true;
+        //        Rider_ErrorProvider.SetError(txt_DesiredTime, null);
+        //    }
+        //}
 
 
-        }
+        
 
-        private void txt_CreditCard_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrEmpty(txt_CreditCard.Text))
-            {
-                e.Cancel = true;
-                txt_CreditCard.Focus();
-                Rider_ErrorProvider.SetError(txt_CreditCard, "Please enter a street Address");
-            }
-            else if (txt_CreditCard.Text.Trim().Length != 16)
-            {
-                e.Cancel = true;
-                txt_CreditCard.Focus();
-                Rider_ErrorProvider.SetError(txt_CreditCard, "Please check if Credit Card is Correct");
+        //private void txt_CreditCard_Validating(object sender, CancelEventArgs e)
+        //{
+        //    if (string.IsNullOrEmpty(txt_CreditCard.Text))
+        //    {
+        //        e.Cancel = true;
+        //        txt_CreditCard.Focus();
+        //        Rider_ErrorProvider.SetError(txt_CreditCard, "Please enter a street Address");
+        //    }
+        //    else if (txt_CreditCard.Text.Trim().Length != 16)
+        //    {
+        //        e.Cancel = true;
+        //        txt_CreditCard.Focus();
+        //        Rider_ErrorProvider.SetError(txt_CreditCard, "Please check if Credit Card is Correct");
 
-            }
-            else
-            {
-                e.Cancel = true;
-                Rider_ErrorProvider.SetError(txt_CreditCard, null);
-            }
-        }
+        //    }
+        //    else
+        //    {
+        //        e.Cancel = true;
+        //        Rider_ErrorProvider.SetError(txt_CreditCard, null);
+        //    }
+        //}
     }
 }
